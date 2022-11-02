@@ -1,3 +1,2 @@
 ## 0.0.1
-
-* TODO: Describe initial release.
+GSアルゴリズムの基本形を実装
