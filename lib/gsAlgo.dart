@@ -1,4 +1,7 @@
 part of 'mathematics.dart';
+
+/// Gale–Shapley アルゴリズム
+/// 安定マッチング
 class GsAlgo{
   List<List<Person>> matching(List<Person> askOut, List<Person> askedOut){
     List<List<Person>> pairs = [];
