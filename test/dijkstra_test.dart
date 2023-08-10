@@ -19,8 +19,8 @@ void main() {
     for (int i = 0; i < distances.length; i++) {
       debugPrint('Vertex $i: ${distances[i]}');
     }
-    final stronglyConnectedComponents = graph.kosaraju();
-    debugPrint('stronglyConnectedComponents $stronglyConnectedComponents');
+    // final stronglyConnectedComponents = graph.kosaraju();
+    // debugPrint('stronglyConnectedComponents $stronglyConnectedComponents');
     // expect(uf.isConnected(0, 7), true);
     // expect(uf.isConnected(2, 4), false);
   });
