@@ -2,7 +2,7 @@ import 'dart:collection';
 
 /// 最大フロー問題
 /// Dinic Algorithm
-///
+/// 最小カットを出力する場合は修正する必要あり
 class MaxFlowSolver {
   final int inf = 1 << 30;
   late int n; // グラフのノード数
