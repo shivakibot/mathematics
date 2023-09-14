@@ -1,7 +1,10 @@
 import 'dart:collection';
 
+/// 最大フロー問題
+/// Dinic Algorithm
+///
 class MaxFlowSolver {
-  final int _inf = 1 << 30;
+  final int inf = 1 << 30;
   late int n; // グラフのノード数
   late List<List<int>> capacity; // 容量行列
   late List<List<int>> adj; // 隣接行列
@@ -22,7 +25,6 @@ class MaxFlowSolver {
     int maxFlow = 0;
     List<int> level, ptr;
 
-    /// BFSでレベルグラフを構築
     while (true) {
       // レベルグラフを構築
       level = List.filled(n, -1);
@@ -44,11 +46,13 @@ class MaxFlowSolver {
         break;
       }
 
+      // debugPrint('level: $level');
+
       // レベルグラフ上でDFSで増加パスを見つける
       ptr = List.from(adj.map((_) => 0)); // ポインタを初期化
 
       while (true) {
-        int pushedFlow = dinicDFS(source, sink, _inf, level, ptr);
+        int pushedFlow = dinicDFS(source, sink, inf, level, ptr);
         if (pushedFlow == 0) break;
         maxFlow += pushedFlow;
       }
@@ -64,6 +68,7 @@ class MaxFlowSolver {
       if (level[v] == level[u] + 1 && capacity[u][v] > 0) {
         int pushedFlow = dinicDFS(v, sink, flow < capacity[u][v] ? flow : capacity[u][v], level, ptr);
         if (pushedFlow > 0) {
+          /// ブロッキングフローが存在したので、フローグラフの流量及び容量を更新する
           capacity[u][v] -= pushedFlow;
           capacity[v][u] += pushedFlow;
           return pushedFlow;

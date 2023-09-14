@@ -16,9 +16,12 @@ void main() {
     solver.addEdge(3, 4, 15);
     solver.addEdge(3, 5, 10);
     solver.addEdge(4, 5, 15);
-
+    // debugPrint('INF: ${solver.inf}');
+    debugPrint('初回容量行列: ${solver.capacity}');
     int maxFlow = solver.dinicMaxFlow(0, 5); // ソースからシンクへの最大フローを計算
 
     debugPrint('最大フロー: $maxFlow'); // A: 25
+    debugPrint('最終容量行列: ${solver.capacity}');
+    debugPrint('隣接行列: ${solver.adj}');
   });
 }
