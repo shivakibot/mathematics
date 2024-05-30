@@ -34,9 +34,8 @@ double binomialDistribution(int n, int k, double p) {
 }
 
 /// ポアソン分布関数
-///
-///
-///
+/// 発生確率が低く、試行回数が膨大な場合に使用される。
+/// 製品の不良品発生率など、製品評価として利用される。
 double poissonDistribution(int k, double lambda) {
   double numerator = pow(lambda, k) * exp(-lambda);
   int denominator = _factorial(k);
