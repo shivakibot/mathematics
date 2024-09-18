@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:mathematics/dinic.dart';
+import 'package:mathematics/argorithms/dinic.dart';
 
 void main() {
   test('MaxFlow test', () {

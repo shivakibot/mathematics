@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:mathematics/bellman_ford.dart';
+import 'package:mathematics/argorithms/bellman_ford.dart';
 
 void main() {
   test('bellmanFord test', () {

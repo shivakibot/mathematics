@@ -2,4 +2,4 @@ library mathematics;
 
 import 'person.dart';
 
-part 'gsAlgo.dart';
+part 'argorithms/gsAlgo.dart';

@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:mathematics/glicko2.dart';
+import 'package:mathematics/argorithms/glicko2.dart';
 
 void main() {
   test('Glicko2 test', () {

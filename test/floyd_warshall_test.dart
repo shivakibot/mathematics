@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:mathematics/floyd_warshall.dart';
+import 'package:mathematics/argorithms/floyd_warshall.dart';
 
 void main() {
   test('floydWarshall test', () {

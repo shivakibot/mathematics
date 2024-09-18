@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:mathematics/2sat.dart';
+import 'package:mathematics/argorithms/2sat.dart';
 
 void main() {
   test('2-SAT test', () {

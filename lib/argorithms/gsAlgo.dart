@@ -1,4 +1,4 @@
-part of 'mathematics.dart';
+part of '../mathematics.dart';
 
 /// Gale–Shapley アルゴリズム
 /// 安定マッチング

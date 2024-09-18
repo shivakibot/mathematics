@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:mathematics/kosaraju.dart';
+import 'package:mathematics/argorithms/kosaraju.dart';
 
 void main() {
   test('kosaraju test', () {
