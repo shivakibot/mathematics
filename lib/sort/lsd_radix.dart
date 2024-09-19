@@ -1,5 +1,5 @@
 class LSDRadixSort {
-  // メインのソート関数
+  /// 数字のみ
   void radixSort(List<int> arr) {
     int maxNumber = _getMax(arr); // 最大の数を取得
     int digitPlace = 1; // 1の位から始める
